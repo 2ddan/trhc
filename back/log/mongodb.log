@@ -1,0 +1,84 @@
+2018-11-12T13:13:56.298+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-11-12T13:13:56.823+0800 I CONTROL  [initandlisten] MongoDB starting : pid=7748 port=29817 dbpath=G:\go\back\db 64-bit host=DESKTOP-DHEUKO3
+2018-11-12T13:13:56.823+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-11-12T13:13:56.823+0800 I CONTROL  [initandlisten] db version v4.0.4
+2018-11-12T13:13:56.823+0800 I CONTROL  [initandlisten] git version: f288a3bdf201007f3693c58e140056adf8b04839
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten] modules: none
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten] build environment:
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-11-12T13:13:56.824+0800 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 29817 }, storage: { dbPath: "G:\go\back\db" }, systemLog: { destination: "file", logAppend: true, path: "G:\go\back\log\mongodb.log" } }
+2018-11-12T13:13:56.852+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7675M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-11-12T13:13:56.974+0800 I STORAGE  [initandlisten] WiredTiger message [1541999636:973746][7748:140733781532720], txn-recover: Set global recovery timestamp: 0
+2018-11-12T13:13:57.065+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2018-11-12T13:13:57.243+0800 I CONTROL  [initandlisten] 
+2018-11-12T13:13:57.243+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-11-12T13:13:57.243+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-11-12T13:13:57.243+0800 I CONTROL  [initandlisten] 
+2018-11-12T13:13:57.243+0800 I CONTROL  [initandlisten] 
+2018-11-12T13:13:57.244+0800 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2018-11-12T13:13:57.244+0800 I CONTROL  [initandlisten] **          We suggest disabling NUMA in the machine BIOS 
+2018-11-12T13:13:57.244+0800 I CONTROL  [initandlisten] **          by enabling interleaving to avoid performance problems. 
+2018-11-12T13:13:57.244+0800 I CONTROL  [initandlisten] **          See your BIOS documentation for more information.
+2018-11-12T13:13:57.244+0800 I CONTROL  [initandlisten] 
+2018-11-12T13:13:57.244+0800 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: dc72e7a4-82a4-4d12-b3ab-e957c342d8ac
+2018-11-12T13:13:57.350+0800 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2018-11-12T13:13:57.358+0800 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: bd2fed2d-1915-4ce6-b74d-57d0b5da0054
+2018-11-12T13:13:57.711+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'G:/go/back/db/diagnostic.data'
+2018-11-12T13:13:57.714+0800 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 184d0297-e1f3-4b62-9cd5-e0385290e0c4
+2018-11-12T13:13:57.715+0800 I NETWORK  [initandlisten] waiting for connections on port 29817
+2018-11-12T13:13:57.897+0800 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2018-11-12T13:13:57.897+0800 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-11-12T13:13:57.908+0800 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2018-11-12T13:13:57.908+0800 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 194ms
+2018-11-15T11:17:09.315+0800 I CONTROL  [thread1] CTRL_CLOSE_EVENT signal
+2018-11-15T11:17:09.315+0800 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2018-11-15T11:17:09.316+0800 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2018-11-15T11:17:09.317+0800 I CONTROL  [consoleTerminate] Shutting down free monitoring
+2018-11-15T11:17:09.317+0800 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2018-11-15T11:17:09.322+0800 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2018-11-15T11:17:09.440+0800 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2018-11-15T11:17:09.441+0800 I CONTROL  [consoleTerminate] now exiting
+2018-11-15T11:17:09.441+0800 I CONTROL  [consoleTerminate] shutting down with code:12
+2019-06-14T08:36:35.951+0800 I CONTROL  [main] ***** SERVER RESTARTED *****
+2019-06-14T08:36:36.754+0800 I CONTROL  [initandlisten] MongoDB starting : pid=12904 port=29817 dbpath=G:\trhc\back\db 64-bit host=DESKTOP-DHEUKO3
+2019-06-14T08:36:36.754+0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2019-06-14T08:36:36.754+0800 I CONTROL  [initandlisten] db version v4.0.4
+2019-06-14T08:36:36.754+0800 I CONTROL  [initandlisten] git version: f288a3bdf201007f3693c58e140056adf8b04839
+2019-06-14T08:36:36.754+0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-06-14T08:36:36.755+0800 I CONTROL  [initandlisten] modules: none
+2019-06-14T08:36:36.755+0800 I CONTROL  [initandlisten] build environment:
+2019-06-14T08:36:36.755+0800 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2019-06-14T08:36:36.755+0800 I CONTROL  [initandlisten]     distarch: x86_64
+2019-06-14T08:36:36.755+0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-06-14T08:36:36.755+0800 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", port: 29817 }, storage: { dbPath: "G:\trhc\back\db" }, systemLog: { destination: "file", logAppend: true, path: "G:\trhc\back\log\mongodb.log" } }
+2019-06-14T08:36:36.774+0800 I STORAGE  [initandlisten] Detected data files in G:\trhc\back\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2019-06-14T08:36:36.774+0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7675M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-06-14T08:36:37.144+0800 I STORAGE  [initandlisten] WiredTiger message [1560472597:143220][12904:140728056635440], txn-recover: Main recovery loop: starting at 1/560896 to 2/256
+2019-06-14T08:36:37.306+0800 I STORAGE  [initandlisten] WiredTiger message [1560472597:305226][12904:140728056635440], txn-recover: Recovering log 1 through 2
+2019-06-14T08:36:37.405+0800 I STORAGE  [initandlisten] WiredTiger message [1560472597:405247][12904:140728056635440], txn-recover: Recovering log 2 through 2
+2019-06-14T08:36:37.487+0800 I STORAGE  [initandlisten] WiredTiger message [1560472597:486260][12904:140728056635440], txn-recover: Set global recovery timestamp: 0
+2019-06-14T08:36:37.627+0800 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] 
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] 
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] 
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] ** WARNING: You are running on a NUMA machine.
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] **          We suggest disabling NUMA in the machine BIOS 
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] **          by enabling interleaving to avoid performance problems. 
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] **          See your BIOS documentation for more information.
+2019-06-14T08:36:37.806+0800 I CONTROL  [initandlisten] 
+2019-06-14T08:36:38.261+0800 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'G:/trhc/back/db/diagnostic.data'
+2019-06-14T08:36:38.265+0800 I NETWORK  [initandlisten] waiting for connections on port 29817
+2019-06-14T08:36:42.787+0800 I CONTROL  [thread1] CTRL_CLOSE_EVENT signal
+2019-06-14T08:36:42.787+0800 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2019-06-14T08:36:42.788+0800 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2019-06-14T08:36:42.788+0800 I CONTROL  [consoleTerminate] Shutting down free monitoring
+2019-06-14T08:36:42.788+0800 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2019-06-14T08:36:42.796+0800 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2019-06-14T08:36:43.058+0800 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2019-06-14T08:36:43.058+0800 I CONTROL  [consoleTerminate] now exiting
+2019-06-14T08:36:43.058+0800 I CONTROL  [consoleTerminate] shutting down with code:12

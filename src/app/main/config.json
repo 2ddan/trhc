@@ -1,0 +1,36 @@
+{
+    "app":{
+        "name":"trhc"
+    },
+   "server":{
+        "http":{
+            "port":"8018"
+        },
+        "https":{
+            "key":"src/app/tls/2122658_mgame.xianquyouxi.com.key",
+            "crt":"src/app/tls/2122658_mgame.xianquyouxi.com.pem",
+            "port": "0"
+        },
+        "ws":{
+            "port":"0"
+        },
+        "wss":{
+            "port":"0"
+        }
+    },
+    "db":{
+        "url":"mongodb://localhost:29817",
+        "index":{
+            "userid":{"keys":{"gamename":1}},
+            "user":{"keys":{"username":1,"uid":1}},
+            "rank_yldj":{"keys":{"uid":1,"score":1}}
+        }
+    },
+    "static": {
+        "dir":"htdocs",
+        "default":"index.html"
+    },
+    "log" : {
+        "dir":"back/log"
+    } 
+}

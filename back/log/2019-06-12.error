@@ -1,0 +1,297 @@
+
+2019-06-12 16:32:49.9239942 +0800 CST m=+0.026997301
+read g:/go: The handle is invalid.
+goroutine 23 [running]:
+ni/logger.Error.func1(0xc000098300, 0x22)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x7790aa, 0xa, 0x790b00, 0x480a8d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa01ec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/websocket.Create(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:140 +0x1a4
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:13 +0xb5
+testing.tRunner(0xc000114100, 0x790b00)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.
+====================================================
+
+2019-06-12 16:36:27.258208 +0800 CST m=+0.066970601
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 5 [running]:
+ni/logger.Error.func1(0x79bb1b, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x788079, 0xa, 0x79fd88, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084d20)
+	g:/go/src/ni/server/server.go:50 +0x400
+ni/websocket.Create(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:128 +0x36
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:13 +0xb5
+testing.tRunner(0xc000114100, 0x79fd88)
+	D:/Go/src/testing/testing.go
+====================================================
+
+2019-06-12 16:43:00.5928412 +0800 CST m=+0.026983801
+read g:/go: The handle is invalid.
+goroutine 23 [running]:
+ni/logger.Error.func1(0xc000098300, 0x22)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x7790aa, 0xa, 0x790b00, 0x480a8d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa01ec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/websocket.Create(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:141 +0x1a4
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:13 +0xb5
+testing.tRunner(0xc000114100, 0x790b00)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.
+====================================================
+
+2019-06-12 16:43:53.4199032 +0800 CST m=+0.029000901
+read g:/go: The handle is invalid.
+goroutine 25 [running]:
+ni/logger.Error.func1(0xc000098300, 0x22)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x788079, 0xa, 0x79fd98, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/websocket.ServerStart(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:152 +0x6d
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:13 +0xb5
+testing.tRunner(0xc000114100, 0x79fd98)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/test
+====================================================
+
+2019-06-12 16:54:17.4021984 +0800 CST m=+0.036973601
+listen tcp :80: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+goroutine 23 [running]:
+ni/logger.Error.func1(0xc0000a0280, 0x72)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x788079, 0xa, 0x79fd90, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/websocket.Create(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:134 +0x6d
+ni/websocket.ServerStart(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:144 +0x10a
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:13 +0xb5
+testing.tRunner(0xc000114100, 0x79fd90)
+	D:/Go/sr
+====================================================
+
+2019-06-12 16:54:17.4012001 +0800 CST m=+0.035975201
+listen tcp :443: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+goroutine 7 [running]:
+ni/logger.Error.func1(0xc000188000, 0x73)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x788079, 0xa, 0x79fd90, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/websocket.Create(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:134 +0x6d
+ni/websocket.ServerStart(0xc000084d20)
+	g:/go/src/ni/websocket/websocket.go:144 +0x10a
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:13 +0xb5
+testing.tRunner(0xc000114100, 0x79fd90)
+	D:/Go/src
+====================================================
+
+2019-06-12 19:01:15.43503 +0800 CST m=+106.128092201
+websocket: request origin not allowed by Upgrader.CheckOrigin
+goroutine 22 [running]:
+ni/logger.Error.func1(0x7999c3, 0x3d)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc0000f6100, 0x788079, 0xa, 0x79fd88, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc0000f6000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc0000f6000, 0xc000087e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000004a00, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc000018180, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 5 [select (no cases)]:
+ni/websocket.serverStart(0xc000076d20)
+	g:/go/src/ni/websocket/websocket_test.go:25 +0x10f
+ni/websocket.TestCreate(0xc0000f6100)
+	g:/go/src/ni/websocket/websocket_test.go:14 +0xb5
+testing.tRunner(0xc0000f6100, 0x79fd88)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/test
+====================================================
+
+2019-06-12 19:03:32.452183 +0800 CST m=+35.017603401
+websocket: request origin not allowed by Upgrader.CheckOrigin
+goroutine 12 [running]:
+ni/logger.Error.func1(0x7999d0, 0x3d)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000114100, 0x788079, 0xa, 0x79fd90, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/websocket.serverStart(0xc000084d20)
+	g:/go/src/ni/websocket/websocket_test.go:25 +0x10f
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:14 +0xb5
+testing.tRunner(0xc000114100, 0x79fd90)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/tes
+====================================================
+
+2019-06-12 19:06:29.4729885 +0800 CST m=+212.038408901
+websocket: request origin not allowed by Upgrader.CheckOrigin
+goroutine 31 [running]:
+ni/logger.Error.func1(0x7999d0, 0x3d)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive, 3 minutes]:
+testing.(*T).Run(0xc000114100, 0x788079, 0xa, 0x79fd90, 0x481efd)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000114000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000114000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc0000669e0, 0xa1aec0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases), 3 minutes]:
+ni/websocket.serverStart(0xc000084d20)
+	g:/go/src/ni/websocket/websocket_test.go:25 +0x10f
+ni/websocket.TestCreate(0xc000114100)
+	g:/go/src/ni/websocket/websocket_test.go:14 +0xb5
+testing.tRunner(0xc000114100, 0x79fd90)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+
+====================================================

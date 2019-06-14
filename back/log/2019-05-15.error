@@ -1,0 +1,280 @@
+
+2019-05-15 08:43:42.7224379 +0800 CST m=+0.029018301
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
+
+2019-05-15 08:48:47.2672095 +0800 CST m=+0.040002901
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
+
+2019-05-15 09:12:00.9029901 +0800 CST m=+0.044040901
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
+
+2019-05-15 09:21:02.6059986 +0800 CST m=+0.033970801
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
+
+2019-05-15 09:30:33.5795289 +0800 CST m=+0.043004901
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
+
+2019-05-15 09:37:51.1773533 +0800 CST m=+0.041000901
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
+
+2019-05-15 09:42:35.4620741 +0800 CST m=+0.036001401
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 5 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutine
+====================================================
+
+2019-05-15 09:48:10.3634975 +0800 CST m=+0.033962401
+tls: failed to find certificate PEM data in certificate input, but did find a private key; PEM inputs may have been switched
+goroutine 35 [running]:
+ni/logger.Error.func1(0x787600, 0x7c)
+	g:/go/src/ni/logger/logger.go:22 +0xa5
+created by ni/logger.Error
+	g:/go/src/ni/logger/logger.go:17 +0x69
+
+goroutine 1 [chan receive]:
+testing.(*T).Run(0xc000116100, 0x774465, 0xa, 0x78b7c8, 0x481d4d)
+	D:/Go/src/testing/testing.go:917 +0x388
+testing.runTests.func1(0xc000116000)
+	D:/Go/src/testing/testing.go:1157 +0x7f
+testing.tRunner(0xc000116000, 0xc000097e30)
+	D:/Go/src/testing/testing.go:865 +0xc7
+testing.runTests(0xc000066960, 0x9f8ce0, 0x1, 0x1, 0x0)
+	D:/Go/src/testing/testing.go:1155 +0x2b0
+testing.(*M).Run(0xc00010a100, 0x0)
+	D:/Go/src/testing/testing.go:1072 +0x169
+main.main()
+	_testmain.go:42 +0x145
+
+goroutine 19 [select (no cases)]:
+ni/server.Create(0xc000084cc0)
+	g:/go/src/ni/server/server.go:39 +0x3f8
+ni/server.TestCreate(0xc000116100)
+	g:/go/src/ni/server/server_test.go:11 +0xb5
+testing.tRunner(0xc000116100, 0x78b7c8)
+	D:/Go/src/testing/testing.go:865 +0xc7
+created by testing.(*T).Run
+	D:/Go/src/testing/testing.go:916 +0x361
+
+goroutin
+====================================================
