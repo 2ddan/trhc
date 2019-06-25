@@ -9,271 +9,258 @@ body {
   margin: 0px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color:#737373;
-  background-color: #fff;
+  color:#333333;
+  background-color: #f4f5f5;
 }
 li{
   list-style: none;
 }
 
 a{
-  color:#737373;
+  color:#333333;
   text-decoration: none;
 }
 a:hover{
   text-decoration: underline;
 }
 
-.warp{margin:0 auto;width:100%;max-width:1200px;height:auto;}
+.layout{
+  z-index: 5;
+  overflow-x: hidden;
+  overflow-y: auto;
+  
+}
+
 .content{
   margin:0 auto;
-  padding:0 1rem;
   height: auto;
   max-width:1000px;
 }
-
+.header{
+  position: relative;
+}
 .top{
   position: fixed;
-  left: 0;
   top: 0;
-  z-index:20;
+  left:0;
+  z-index: 10;
   width: 100%;
-  height:4.5rem;
+  height:3rem;
+  line-height: 3rem;
   background-color:#fff;
-  box-shadow: 0px 0px .5rem rgba(0, 0, 0, .3);
+  box-shadow: 0px 0px .5rem rgba(0, 0, 0, .2);
+}
+
+.nav li,.logo,.tag,.tag dd,.ei_l{
+  float: left;
+}
+.logo{
+  width: 14rem;
+  text-align: center;
+  background-color: #ffcc00;
+  color: #fff;
+  font-size: 2rem;
+}
+.nav{
+  position: absolute;
+  right: .5rem;
+  top: 0;
+}
+.nav li{
+  padding:0 .4rem;
+  font-size: .8rem;
+}
+
+.tag{
+  margin-left:1rem;
+  margin-top:.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .2rem 0;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tag dd{
+  height: 2rem;
+  line-height: 2rem;
+  margin-left:.2rem;
+  border: 1px solid #f4f5f5;
+}
+
+.tag dd.curr a{
+  color: #ffcc00;
+}
+.tag dd a{
+  display: block;
+  padding: 0 .4rem;
+}
+.essay_list{
+  padding-top:3.4rem;
+  padding-bottom: 2rem;
+}
+
+.essay_i{
+  margin-top:1px;
+  padding:1.5rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+.essay_i:hover{
+  background-color: rgb(250, 250, 250);
+  cursor: pointer;
+}
+
+.ei_info{
+  color: #b2bac2;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+.ei_title{
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.ei_tag{
+  overflow: hidden;
+}
+.ei_tag li{
+  float: left;
+  margin-right:.3rem;
+  padding:0 .3rem;
+  font-size: .8rem;
+  line-height:2rem;
+  border:1px solid #f4f5f5;
+}
+.ei_tag li:hover{
+  color: #ffcc00;
 }
 .footer{
   position: fixed;
-  left:0;bottom:0;
-  z-index:20;
+  bottom: 0;
+  left:0;
+  z-index: 10;
   width: 100%;
   height:2rem;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #f4f5f5;
   font-size:0.6rem;
   line-height: 2rem;
   text-align: center;
-  background-color:#fff;
+  background-color: #fff;
 }
-.bg{
+
+/**
+文章详情
+*/
+.essay_show{
   position: fixed;
-  width:100%;
-  background-attachment: fixed;
-  z-index: -1;
-}
-.bg_1{
-  top:4.5rem;
-  height: 35rem;
-  background-color: #23628b;
-  background-image: url(../images/ban.png);
-  background-repeat: repeat;
-  background-size: contain;
-}
-.bg_2{
-  top:4.5rem;
-  height: 35rem;
-  background-image: url(../images/banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left center;
-}
-
-.logo{
-  padding-left:.5em;
-  float: left;
-  line-height: 4.5rem;
-  font-size:1.5rem;
-  color:#3bb5ee;
-}
-.nav{
-  float: right;
-}
-.nav li{
-  float: left;
-  width:5rem;
-  height:3.5rem;
-  line-height: 3.5rem;
-  font-size:0.8rem;
-  font-weight: bold;
-  text-align: center;
-}
-.nav li:hover{
-  color:#fff;
-  background-color: #2fbcf8;
-}
-.nav .curr{
-  color:#fff;
-  background-color: #3ab5e9;
-  border-bottom:1rem solid #37a2d4;
-}
-.title{
-  width: 8rem;
-  font-size:2rem;
-  padding:1rem;
-  color:#fff;
-  background-color:#3cb4ee;
-  border-right:1rem solid #37a2d4;
-}
-
-.index{
-  margin-top:4.5rem;
+  display: none;
+  z-index: 20;
   width: 100%;
-  height:35rem;
-  
+  height:100%;
+  left:0;
+  top:0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, .5)
 }
-.index_t{
-  width:100%;
-  padding-top:13.5rem;
-  white-space: nowrap;
-  height:2.5rem;line-height:2.5rem;
-  text-align: center;
-  font-size:2rem;color: #fff;
-  /* text-shadow: 1px 1px 5px #256892; */
-  /* -webkit-text-stroke: 2px #000; */
-  /* text-shadow: 0 2px #fff, 2px 0 #fff, -2px 0 #fff, 0 -2px #fff; */
+.essay_bg{
+  position: fixed;
+  z-index: 5;
+  left: 50%;
+  top:0;
+  height: 100%;
+  background-color: #fff;
 }
-.index_t span{
-  padding:.5rem;
-  background-color: rgba(37,104,146,.5);
-}
-
-
-.info{
-  width: 100%;
-  height:auto;
-  background-color: #f2f3f7;
-}
-.info::after, .service_c::after, .partner::after{
-  content: "";
-  display: block;
-  clear: both;
-}
-.introduce{
-  margin:0 auto;
-  padding: 1rem;
-  padding-bottom:3rem;
+.essay_content{
+  position: relative;
+  z-index: 9;
+  margin: 0 auto;
   max-width: 1000px;
 }
-.introduce h3{
-  padding:2rem 0;
-  font-size:1.5rem;
-  color:#2d2d2d;
+.essay_detail{
+  padding: 1.5rem;
 }
-.introduce p{
-  padding-top:1rem;
-  font-size:1rem;
-  line-height:1.8rem;
+.essay_detail .ei_title{
+  line-height:4rem;
 }
-
-.service{
-  padding:1rem 0;
-  padding-bottom:3rem;
-  background-color: #fff;
+.essay_words{
+  padding: 1rem 0;
 }
-
-.service_c{}
-.ser_item{
-  float: left;
-  width: 45%;
+.essay_words h3{
   margin-top:1rem;
-  padding-left:1rem;
-  padding-bottom:.5rem;
-  border-left:.5rem solid #3cb4ee;
+  margin-bottom:1rem;
+  font-size:1.2rem;
+  line-height: 3rem;
+  border-bottom: 1px solid #f4f5f5;
 }
-.ser_item dt{
-  font-size:1.5rem;
-  color: #2d2d2d;
+.essay_words h4{
+  margin-top:1rem;
+  margin-bottom:1rem;
+  font-size:1rem;
+  line-height: 3rem;
 }
-.ser_item dd{
-  padding-top:.5rem;
-  font-size:.8rem;
-  line-height: 1.5rem;
-}
-.o{
-  border-left:.5rem solid #2d2d2d;
-}
-/*❶❷❸❹❺❻❼❽❾❿⓫⓬⓭⓮⓯⓰⓱⓲⓳⓴*/
-.ser_item dd.l2{
+.essay_words p{
+  margin-top:1rem;
   font-size: 1rem;
-  color: #3cb4ee;
+  line-height: 2rem;
+}
+.essay_words img{
+  max-width: 100%;
+  margin: 1rem auto;
+}
+.essay_words pre{
+  padding:1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:1rem;
+  line-height:1.5rem;
+  background-color: rgba(202, 202, 202, 0.2);
+  overflow: auto;
+}
+.essay_words ul{
+  padding: .5rem 1.5rem;
+}
+.essay_words ul li{
+  list-style-type: disc;
+  font-size:1rem;
+  line-height: 2rem;
+}
+.essay_words ol{
+  padding: .5rem 1.5rem;
+}
+.essay_words ol li{
+  list-style-type: decimal;
+  font-size:1rem;
+  line-height: 2rem;
 }
 
-.p_title{
-  margin-top:1rem;
-  font-size: 1.5rem;
-  line-height: 3rem;
-  color: #2d2d2d;
-}
-.partner li{
-  float: left;
-  width: 10rem;
-  height:10rem;
-  font-size:1rem;
-  line-height: 1.5rem;
+.essay_close{
+  position: absolute;
+  right: -2.4rem;
+  top:0;
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
   text-align: center;
-  background-position: center;
-  background-size: 90% auto;
-  background-repeat: no-repeat;
-  border:1px solid #ccc;
-}
-.partner li:hover{
-  background-size: 100% auto;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
 }
 
-.join{
-  padding:1rem 0 3rem 0;
-  width: 100%;
-  height:auto;
-  background-color: #f2f3f7;
+@media screen and (max-width:630px){
+  .top{
+    height: 6rem;
+  }
+  .logo{
+    float: none;
+  }
+  .tag{
+    float: none;
+    width: 100%;
+  }
+  .essay_list{
+    padding-top:6.4rem;
+  }
 }
+@media screen and (min-width:630px){
 
-.fuli{}
-.fuli dt{
-  margin-top:1rem;
-  font-size:1.5rem;
-  line-height: 3rem;
-  font-weight: bold;
-  color: #2d2d2d;
-  border-bottom:1px solid #ccc;
-}
-.fuli dd{
-  margin-top:1rem;
-  font-size:1rem;
-  line-height: 1.5rem;
-}
-
-.cantact{
-  padding:1rem 0 3rem 0;
-  background-color: #fff;
-}
-.map{
-  margin-top:1rem;
-  width:100%;
-  height:20rem;
-}
-
-@media screen and (max-width:700px){
-.nav {
-  display: none;
-}
-.m_nav{
-  display: block;
-}
-.ser_item{
-  float: none;
-  width: auto;
-}
-}
-@media screen and (min-width:700px){
-.nav {
-  display: block;
-}
-.m_nav{
-  display: none;
-}
-.index_t{
-  text-indent: 25rem;
-}
-.ser_item{
-  float: left;
-}
 }

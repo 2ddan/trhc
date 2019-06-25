@@ -1,43 +1,8 @@
 var modules = {};
 (function(){
     var exports = modules["common"] = {};
-    var nav,con,nowNav,currClass,clientWidth,clientHeight,timer;
-    var ElsByAttr = function(keys){
-        var r = {};
-        for(var i = 0,len = keys.length; i < len; i++){
-            var nodes = $("["+keys[i]+"]");
-            nodes.each(function(k,v){
-                r[nodes.eq(k).attr(keys[i])] = {
-                    node: nodes.eq(k)
-                }
-            });
-        }
-        return r;
-    };
-    var tabControler = function(now,curr){
-        nav = ElsByAttr(["data-nav"]),con = ElsByAttr(["data-content"]);
-        posResize(con);
-        currClass = curr;
-        for(var k in nav){
-            (function(key){
-                nav[key].node.click(function(){
-                    setNow(key);
-                    $('html,body').animate({scrollTop:con[key].offest.top}, 800);
-                })
-            })(k);
-        }
-        nav[now].node.addClass(currClass);
-        nowNav = now;
-    };
-    var setNow = function(key){
-        if(key != nowNav){
-            nav[key].node.addClass(currClass);
-            nav[nowNav].node.removeClass(currClass);
-            nowNav = key;
-            console.log(con[nowNav].offest.top);
-            
-        }
-    };
+    // resize window
+    var con;
     var posResize = function(list){
         for(var i in list){
             list[i].offest = list[i].node.offset();
@@ -47,6 +12,13 @@ var modules = {};
             }
         }
     };
+    // 计算文章详情背景
+    exports.caclEssayBg = function(){
+        var bgNode = document.getElementById("essayBg"),
+            contentNode = document.getElementById("essayContent"),
+            width = contentNode.clientWidth;
+        bgNode.setAttribute("style",`width:${width}px;margin-left:-${width/2}px;`);
+    }
     var resize = function(){
         var body = $(document.body),
             w = document.body.clientWidth || document.documentElement.clientWidth,
@@ -61,26 +33,51 @@ var modules = {};
             body.attr("style","font-size:20px;");
         }
         posResize(con);
+        exports.caclEssayBg();
     };
-    var windowScroll = function(e){
-        var t = $(window).scrollTop(),
-            l = t + clientHeight/2;
-        for(let k in con){
-            if( l >= con[k].offest.top && l <= con[k].offest.top+con[k].size.h){
-                clearTimeout(timer);
-                timer = setTimeout((function(key){
-                    return function(){
-                        clearTimeout(timer);
-                        setNow(key);
-                    }
-                })(k),100);
-                return;
-            }
-        }
-        console.log(e);
-    };
-    tabControler("index","curr");
     resize();
     window.addEventListener("resize",resize);
-    $(window).scroll(windowScroll);
+
+    // host
+    var hostNode = document.getElementById("host"),host = location.host;
+    hostNode.innerText = host;
+    hostNode.setAttribute("href",location.protocol +"//"+host);
+    
+    exports.ajax = (type, url, reqData, reqType, callback, processBack) => {
+        const xhr = new XMLHttpRequest();
+        if(reqType){
+            xhr.responseType = 'arraybuffer';
+        }
+        /**
+         * @description 链接被终止
+         */
+        xhr.onabort = () => {
+            callback("abort");
+        };
+        xhr.onerror = (ev) => {
+            callback(`error status: ${xhr.status} ${xhr.statusText}, ${url}`);
+        };
+        xhr.upload.onprogress = (ev) => {
+            processBack && processBack(ev);
+        }
+        xhr.onprogress = (ev) => {
+            
+        }
+        xhr.onload = (ev) => {
+            if (xhr.status === 300 || xhr.status === 301 || xhr.status === 302 || xhr.status === 303) {
+                return callback(xhr.getResponseHeader("Location"));
+            }
+            if (xhr.status !== 200 && xhr.status !== 304) {
+                return callback(`error status: ${xhr.status} ${xhr.statusText}, ${url}`);
+            };
+            // console.log(xhr.response);
+            // console.log(xhr.responseText);
+            callback(null,xhr.response || xhr.responseText);
+        }
+        xhr.open(type, url, true);
+        // if(reqType){
+            // xhr.setRequestHeader("accept-encoding", "gzip");
+        // }
+        xhr.send(reqData);
+    }
 })()
